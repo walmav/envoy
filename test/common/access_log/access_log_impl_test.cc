@@ -8,17 +8,8 @@
 
 #include "common/access_log/access_log_impl.h"
 #include "common/config/filter_json.h"
-#include "common/config/well_known_names.h"
-#include "common/http/header_map_impl.h"
-#include "common/http/headers.h"
-#include "common/json/json_loader.h"
-#include "common/network/utility.h"
-#include "common/protobuf/protobuf.h"
-#include "common/protobuf/utility.h"
 #include "common/runtime/runtime_impl.h"
 #include "common/runtime/uuid_util.h"
-#include "common/stats/stats_impl.h"
-#include "common/upstream/upstream_impl.h"
 
 #include "test/common/upstream/utility.h"
 #include "test/mocks/access_log/mocks.h"
@@ -30,7 +21,6 @@
 #include "test/test_common/printers.h"
 #include "test/test_common/utility.h"
 
-#include "api/filter/network/http_connection_manager.pb.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
